@@ -1,0 +1,29 @@
+server:
+  port: 9900
+  # swagger3 view display
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+# swagger enabled
+swagger:
+  enabled: true
+
+thread-pool:
+  # core pool size
+  core-pool-size: 10
+  # max pool size
+  max-pool-size: 20
+  # queue size
+  queue-capacity: 50
+
+#logging:
+#  config: classpath:log4j2-spring.xml
+
+# elasticsearch config
+spring:
+  elasticsearch:
+    uris:
+      - localhost:9200
+    username: elastic
+    password: RIOwg9wMnwSceMZf3QDC
+    socket-timeout: 10s
